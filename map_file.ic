@@ -1,0 +1,87 @@
+#ILAM dictionary - analysis: map_file.ana
+#----------------------------------------
+# Dictionary for mapping between internal names and GRIB2 shortNames
+# needed by GRIB2 read procedures.
+#
+# internal name     GRIB2 shortName
+aer_bc              AER_BC
+aer_du              AER_DUST
+aer_or              AER_ORG
+aer_ss              AER_SS
+aer_su              AER_SO4
+alb_si              ALB_SEAICE
+albdif              ALB_RAD
+asodifd_s           ASWDIFD_S
+asodifu_s           ASWDIFU_S
+asodird_s           ASWDIR_S
+c_t_lk              C_T_LK
+ddt_tke_pconv       DTKE_CON
+dzh_snow            H_SNOW_M
+fr_seaice           fr_seaice
+freshsnow           freshsnow
+geopot              FI
+graupel_gsp         GRAU_GSP
+gust10              VMAX_10M
+gz0                 gz0
+h_b1_lk             H_B1_LK
+h_ice               H_ICE
+h_ml_lk             H_ML_LK
+h_snow              H_SNOW
+hsnow_max           HSNOW_MAX
+plantevap           EVAP_PL
+pres                pres
+pres_msl            PMSL
+pres_sfc            PS
+qc                  QC
+qi                  QI
+qr                  QR
+qs                  QS
+qv                  QV
+qv_s                QV_S
+rh                  RELHUM
+rh_2m               RELHUM_2M
+rh_2m_land          RELHUM_2M_L
+rh_avginc           RELHUM_LML_FILTINC
+rho                 DEN
+rho_snow            RHO_SNOW
+rho_snow_mult       RHO_SNOW_M
+sdi2                SDI_2
+smi                 SMI
+snow_age            SNOAG
+snowfrac_lc         SNOWC
+t2m_bias            T_2M_FILTBIAS
+t_2m                T_2M
+t_2m_land           T_2M_L
+t_b1_lk             T_B1_LK
+t_bot_lk            T_BOT_LK
+t_g                 T_G
+t_ice               T_ICE
+t_mnw_lk            T_MNW_LK
+t_seasfc            T_SEA
+t_sk                SKT
+t_snow              T_SNOW
+t_snow_mult         T_SNOW_M
+t_so                T_SO
+t_wml_lk            T_WML_LK
+td_2m_land          TD_2M_L
+tcond10_max         TCOND10_MX
+temp                T
+theta_v             THETA_V
+tke                 TKE
+topography_c        HSURF
+u                   U
+v                   V
+vn                  VN
+w                   W
+w_i                 W_I
+w_snow              W_SNOW
+w_so                W_SO
+w_so_ice            W_SO_ICE
+wliq_snow           WLIQ_SNOW_M
+wtot_snow           W_SNOW_M
+z_ifc               z_ifc
+pollalnu            ALNUsnc
+pollambr            AMBRsnc
+pollbetu            BETUsnc
+pollpoac            POACsnc
+

@@ -1,0 +1,53 @@
+#ILAM dictionary - forecast output: map_file.fc
+#----------------------------------------------
+# Dictionary for mapping between internal names and GRIB2 shortNames
+#
+# GRIB2 shortName   internal name
+  alb_rad            ALBDIF
+  alb_seaice         ALB_SI
+  apab_s             ASWFLX_PAR_SFC
+  aswdifd_s          ASODIFD_S
+  aswdifu_s          ASODIFU_S
+  aswdir_s           ASODIRD_S
+  cape_con           CAPE
+  den                RHO
+  dtke_con           DDT_TKE_PCONV
+  dtke_hsh           DDT_TKE_HSH
+  evap_pl            PLANTEVAP
+  fi                 GEOPOT
+  fr_ice             FR_SEAICE
+  freshsnw           FRESHSNOW
+  grau_gsp           GRAUPEL_GSP
+  hhl                Z_IFC
+  hsnow_max          HSNOW_MAX
+  hsurf              TOPOGRAPHY_C
+  p                  PRES
+  pmsl               PRES_MSL
+  ps                 PRES_SFC
+  prg_gsp            GRAUPEL_GSP_RATE
+  prr_gsp            RAIN_GSP_RATE
+  prs_gsp            SNOW_GSP_RATE
+  relhum_lml_filtinc RH_AVGINC
+  relhum             RH
+  relhum_2m          RH_2M
+  relhum_2m_l        RH_2M_LAND
+  relhum_lml_filtinc RH_AVGINC
+  sdi_2              SDI2
+  skt                T_SK
+  snoag              SNOW_AGE
+  snowc              SNOWFRAC_LC
+  sobs_rad           SOB_S
+  t                  TEMP
+  t_2m_filtbias      T2M_BIAS
+  t_2m_l             T_2M_LAND
+  t_sea              T_SEASFC
+  tcond10_mx         TCOND10_MAX
+  td_2m_l            TD_2M_LAND
+  thbs_rad           THB_S
+  vmax_10m           GUST10
+  z0                 GZ0
+  ALNUsnc            POLLALNU
+  AMBRsnc            POLLAMBR
+  BETUsnc            POLLBETU
+  POACsnc            POLLPOAC
+
