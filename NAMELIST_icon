@@ -7,7 +7,6 @@
  num_io_procs   = 3 !SPo 1
  num_restart_procs       = 0 !SPo 3
  num_prefetch_proc       = 1 !SPo 1
- itype_comm              = 1
 /
 &grid_nml
  dynamics_grid_filename = './europe011_DOM01.nc' !grid filenames
@@ -161,7 +160,6 @@
  divdamp_order   = 24
  divdamp_fac     = 0.004
  divdamp_type    = 32
- l_open_ubc      = .false.
  igradp_method   = 3
  l_zdiffu_t      = .true.
  thslp_zdiffu    = 0.02
@@ -181,8 +179,6 @@
 /
 &dynamics_nml
  divavg_cntrwgt = 0.50
- idiv_method    = 1
- iequations     = 3
  lcoriolis      = .true.
 /
 !&transport_nml
