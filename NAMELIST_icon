@@ -6,7 +6,7 @@
  l_log_checks   = .false.
  num_io_procs   = 3 !SPo 1
  num_restart_procs       = 0 !SPo 3
- num_prefetch_proc       = 1 !SPo 1
+ num_prefetch_proc       = 1
 /
 &grid_nml
  dynamics_grid_filename = './europe011_DOM01.nc' !grid filenames
@@ -32,7 +32,6 @@
  dt_checkpoint    = 5184000 ! [s] trigger new restart file, here a dummy value (60 days) to avoid crashes
  lkeep_in_sync    = .true.
  output_nml_dict  = 'map_file.fc'
-! netcdf_dict      = 'map_file.fc'
 /
 &run_nml
  dtime       = 100         ! [s] timestep in seconds
@@ -44,9 +43,9 @@
  ltransport  = .true.       ! transport
  ltimer      = .true.       !
  timers_level = 5           !
- msg_level   = 5 !14 !0 !6         ! detailed report during integration
+ msg_level   = 5            ! detailed report during integration
  output      = 'nml','totint'
- restart_filename = 'SASSCAL_restart_<mtype>_<rsttime>.nc'
+ restart_filename = 'CEU11_restart_<mtype>_<rsttime>.nc'
  check_uuid_gracefully = .false. !.true.
  debug_check_level = 0
 /
@@ -181,14 +180,6 @@
  divavg_cntrwgt = 0.50
  lcoriolis      = .true.
 /
-!&transport_nml
-! ctracer_list = '12345'
-! ivadv_tracer = 3
-! itype_hlimit = 4
-! ihadv_tracer = 2
-! llsq_svd     = .TRUE.
-! beta_fct     = 1.005
-!/
 &transport_nml
   ivadv_tracer   = 3,3,3,3,3
   itype_hlimit   = 3,4,4,4,4,
@@ -204,7 +195,6 @@
  lsq_high_ord         = 3
  l_intp_c2l           = .true.
  l_mono_c2l           = .true.
-!support_baryctr_intp = .true.
 /
 &gridref_nml
  grf_intmethod_e  = 6
@@ -234,7 +224,7 @@
  include_last         = .false.
  output_filename      = 'out_EU-R13B5_constant'               ! file name base
  filename_format      = '<output_filename>_<datetime2>'
- ready_file           = 'ready_ILAM_<ddhhmmss>'
+! ready_file           = 'ready_ILAM_<ddhhmmss>'
  stream_partitions_ml = 1
  pe_placement_ml      = 0
  ml_varlist           = 'z_ifc','z_mc',
@@ -249,17 +239,17 @@
 &output_nml
  filetype         = 4
  dom              = -1
- output_start     = "2017-07-01T00:00:00Z"
- output_end       = "2017-07-01T23:00:00Z"
+ output_start     = "__outdatestart__"
+ output_end       = "__outdateend__"
+ m_levels         = "40...(nlev+1)"
  output_interval  = "PT01H"
- ! steps_per_file   = 1
  file_interval    = "P01D"
  include_last     = .true.
  ! steps_per_file_inclfirst = .false.
  remap            = 0   ! triangular grid
  output_filename  = 'out_EU-R13B5_inst'
  filename_format  = '<output_filename>_DOM<physdom>_<levtype>_<datetime2>_1h'
- ready_file       = 'ready_ILAM_<ddhhmmss>'
+! ready_file       = 'ready_ILAM_<ddhhmmss>'
  output_grid      = .true.
  ml_varlist       = 'U', 'V', 'W', 'T', 'theta_v', 'P', 'QV', 'QC', 'QI', 'QR', 'QS', 'QG',
                     'TKE',
@@ -271,8 +261,4 @@
                     'CEILING', 'cape','CAPE_ML', 'CIN_ML',
                     'T_SO', 'W_SO', 'W_SO_ICE', 'SMI',
                     'RAIN_GSP', 'RAIN_CON', 'SNOW_GSP', 'SNOW_CON', 'GRAU_GSP', 'TOT_PREC',
-!                    'CLC','prec_con','prec_gsp',
-!                    'PRR_GSP' , 'PRS_GSP' , 'PRG_GSP', 'tot_prec_rate_avg', 'prec_con_rate_avg', 'prec_gsp_rate_avg',
-!                    'RHO_SNOW ','T_SNOW ','W_SNOW ','H_SNOW ','W_I ','freshsnow',
-!                    'T_MNW_LK','T_WML_LK','H_ML_LK','T_BOT_LK','C_T_LK'
 /
