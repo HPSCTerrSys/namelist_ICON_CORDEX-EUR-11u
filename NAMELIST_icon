@@ -24,10 +24,10 @@
 &limarea_nml
  dtime_latbc     = 3600.
  itype_latbc     = 1
- latbc_boundary_grid     = '__latbc_dir__/lateral_boundary.grid.nc'
- latbc_varnames_map_file = 'map_file.lbc'
+! latbc_boundary_grid     = '__latbc_dir__/lateral_boundary.grid.nc'
+ latbc_varnames_map_file = 'dict.latbc'
  latbc_path      = '__latbc_dir__/'
- latbc_filename  = 'igfff<y><m><d><h>_lbc.nc'
+ latbc_filename  = 'cas<y><m><d><h>_lbc.nc'
  latbc_contains_qcqi = .true.
 /
 &io_nml
