@@ -3,9 +3,7 @@
  lrestart_write_last  = .true.
 /
 &time_nml
- ini_datetime_string = "__simstart__"
- end_datetime_string = "__simend__"
- dt_restart          = __dtrestart__
+ end_datetime_string = ""
 /
 &master_model_nml
   model_name="ATMO"
