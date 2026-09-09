@@ -24,6 +24,7 @@
 &limarea_nml
  dtime_latbc     = 3600.
  itype_latbc     = 1
+ init_latbc_from_fg = .true.
 ! latbc_boundary_grid     = '__latbc_dir__/lateral_boundary.grid.nc'
  latbc_varnames_map_file = 'dict.latbc'
  latbc_path      = '__latbc_dir__/'
