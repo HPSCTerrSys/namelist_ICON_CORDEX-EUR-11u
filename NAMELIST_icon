@@ -241,12 +241,12 @@
  extpar_filename         = '__extpar__'
  pp_sso                  = 2
 /
-!&nudging_nml
-! nudge_type = 1
-! max_nudge_coeff_thermdyn = 0.075
-! max_nudge_coeff_vn = 0.04
-! nudge_start_height=10500
-!/
+&nudging_nml
+ nudge_type = 1
+ max_nudge_coeff_thermdyn = 0.075
+ max_nudge_coeff_vn = 0.04
+ nudge_start_height=10500
+/
 ! -------------------------------------------------------------------------- !
 ! ---  ICON-LAM: constant output fields - native grid at VV=0  --- !
 ! -------------------------------------------------------------------------- !
