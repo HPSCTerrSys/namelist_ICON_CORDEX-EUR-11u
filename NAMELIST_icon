@@ -160,7 +160,7 @@
 /
 &radiation_nml
  ecrad_data_path = "ecraddata"
- ghg_filename =  './bc_greenhouse_rcp45_1765-2500.nc'
+ ghg_filename =  '__ghgforc__'
  irad_co2    = 4           ! 4: from greenhouse gas scenario
  irad_ch4    = 4           ! 4: from greenhouse gas scenario
  irad_n2o    = 4           ! 4: from greenhouse gas scenario
@@ -231,7 +231,7 @@
  heightdiff_threshold    = 2250.
  itype_vegetation_cycle  = 3
  itype_lwemiss           = 2
- extpar_filename         = 'external_parameter_icon_europe011_DOM01_tiles.nc'
+ extpar_filename         = '__extpar__'
 ! pp_sso                  = 2
 /
 !&nudging_nml
