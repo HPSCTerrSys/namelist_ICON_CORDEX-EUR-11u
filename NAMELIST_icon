@@ -16,7 +16,7 @@
  l_limited_area    = .true.
 / 
 &initicon_nml
- init_mode              =  7 !4=cosmo, 2=ifs, 3=combined, 1=DWD analysis
+ init_mode              =  __initmode__ ! 2=ifs, 3=combined, 1=DWD analysis, 7=ICON vremap
  ana_varnames_map_file  = 'map_file.ic'
  lread_ana              = .false.
  ltile_coldstart        = .true.
