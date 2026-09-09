@@ -40,8 +40,8 @@
  runoff_interval              = "PT06H"
  sunshine_interval            = "PT24H"
  maxt_interval                = "PT24H"
- gust_interval                = 3600
- melt_interval                = "PT01H"
+ gust_interval                = 86400
+ melt_interval                = "PT06H"
  lmask_boundary               = .true.
  restart_write_mode="__wrstmode__" ! "sync" if res_prog 0, "dedicated procs multifile" if res_prog >0
 /
@@ -63,7 +63,7 @@
  debug_check_level = 0
 /
 &nwp_phy_nml
- dt_rad           = 300
+ dt_rad           = 900
  dt_conv          = 300
  dt_sso           = 600
  dt_gwd           = 600
