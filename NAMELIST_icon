@@ -210,6 +210,13 @@
   beta_fct       = 1.005
 /
 &diffusion_nml
+ hdiff_order      = 5
+ itype_vn_diffu   = 1
+ itype_t_diffu    = 2
+ hdiff_efdt_ratio = 32.
+ hdiff_smag_fac   = 0.025
+ lhdiff_vn        = .true.
+ lhdiff_temp      = .true.
 /
 &interpol_nml
  nudge_zone_width     = 10
@@ -228,11 +235,11 @@
  itopo                   = 1
  n_iter_smooth_topo      = 1,
  hgtdiff_max_smooth_topo = 750.
- heightdiff_threshold    = 2250.
+ heightdiff_threshold    = 3000.
  itype_vegetation_cycle  = 3
  itype_lwemiss           = 2
  extpar_filename         = '__extpar__'
-! pp_sso                  = 2
+ pp_sso                  = 2
 /
 !&nudging_nml
 ! nudge_type = 1
