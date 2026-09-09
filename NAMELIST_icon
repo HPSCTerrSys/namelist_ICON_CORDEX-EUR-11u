@@ -84,8 +84,8 @@
  itype_z0         = 2
  icapdcycl        = 3
  icpl_aero_conv   = 0
-! icpl_aero_gscp   = 3
- lscale_cdnc      = .false.
+ icpl_aero_gscp   = 3
+ lscale_cdnc      = .true.
  icpl_o3_tp       = 1
  iprog_aero       = 0
  icalc_reff       = 100
@@ -165,8 +165,9 @@
  irad_n2o    = 4           ! 4: from greenhouse gas scenario
  irad_cfc11  = 4           ! 4: from greenhouse gas scenario
  irad_cfc12  = 4           ! 4: from greenhouse gas scenario
- irad_o3     = 79
- irad_aero   = 6
+ irad_o3     = 5
+ isolrad     = 2
+ irad_aero   = 18
  albedo_type = 2          ! Modis albedo
  direct_albedo_water = 3
  albedo_whitecap = 1
